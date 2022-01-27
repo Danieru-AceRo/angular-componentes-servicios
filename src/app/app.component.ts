@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-componentes-servicios';
+  imgParert = '';
+  showImage = true;
+
+
+  onLoaded(img:string) {
+    console.log('logPadre', img);
+    
+  }
+
+  toggleImg() {
+    this.showImage = !this.showImage;
+  }
 }
